@@ -44,10 +44,10 @@ exports.addTransaction = async (req, res, next) => {
         } else {
             return res.status(500).json({
                 success: false,
-                error: 'Server error' 
-        });
+                error: 'Server error'
+            });
+        }
     }
-}
 }
 
 
@@ -76,7 +76,7 @@ exports.deleteTransaction = async (req, res, next) => {
     } catch (err) {
         return res.status(500).json({
             success: false,
-            error: 'Server error' 
-    });
-}
+            error: 'Server Error'
+        });
+    }      
 }
